@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Employee Details</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Department</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees;trackBy:trackEmp" >
+        <td>{{emp.Id}}</td>
+        <td>{{emp.Name}}</td>
+        <td>{{emp.Department}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeEmployee(emp.Id)"> Remove</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<employee-detail *ngIf="selectedEmp" [selectedEmployee]="selectedEmp">
+</employee-detail>
+<employee-form>
+</employee-form>
