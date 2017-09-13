@@ -1,5 +1,9 @@
 # Ngdemo
 
+Take node api first from  https://github.com/maulikprajapati/nodedemo
+
+Run `npm install` to install dependancies
+Run `npm start` to run project
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Development server
